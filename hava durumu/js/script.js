@@ -1,5 +1,5 @@
 const url = "https://api.openweathermap.org/data/2.5/"
-const key = "" // API Key'i openweather.org'dan ücretsiz bir şekilde alıp kullanabilirsiniz.
+const key = "" // API Key'i http://openweathermap.org 'dan ücretsiz bir şekilde alıp kullanabilirsiniz.
 
 
 
