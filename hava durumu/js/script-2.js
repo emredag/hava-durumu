@@ -8086,20 +8086,3 @@ for (var i = 0; i < data.length; i++) {
     document.getElementById("searchBar").appendChild(element);
 }
 
-
-if (!RegExp.escape) {
-    RegExp.escape = function(s) {
-        return s.replace(/[\-\[\]{}()*+?.,\\\^$|#\s]/g, "\\$&")
-    };
-}
-
-jQuery(function() {
-    var $rows = $('.values');
-    $('#seeker').keyup(function() {
-        var regex = new RegExp(RegExp.escape($.trim(this.value).replace(/\s+/g, ' ')), 'i')
-        $rows.hide().filter(function() {
-            var text = $(this).children(".value-id").text().replace(/\s+/g, ' ');
-            return regex.test(text)
-        }).show();
-    });
-});
