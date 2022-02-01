@@ -33,3 +33,11 @@ searchBar.addEventListener("change", getCity);
 function getCity(e) {
     getResult(searchBar.value)
 }
+
+
+function tarihSaat() {
+    var date = new Date().toLocaleString();
+    document.getElementById("clock").innerHTML = date;
+}
+// her 1 saniyede tarihSaat fonksiyonunu yeniden çalıştır
+setInterval(tarihSaat, 1000); 
